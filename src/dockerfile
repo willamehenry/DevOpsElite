@@ -1,0 +1,13 @@
+FROM node
+
+
+COPY package*.json ./
+
+Run npm install 
+
+COPY . .
+
+EXPOSE 8080
+
+CMD ["node","server.js"]
+
